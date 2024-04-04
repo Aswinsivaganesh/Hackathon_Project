@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="false" name="Suite">
+	<!-- smokeTesting
+<groups>
+<run>
+    <include name = "smoke"/>
+</run>
+</groups>
+-->
+	<test name="Test1">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="TestCases.TC_01" />
+			<class name="TestCases.TC_02" />
+			<class name="TestCases.TC_03" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<parameter name="browser" value="Edge" />
+		<classes>
+			<class name="TestCases.TC_01" />
+			<class name="TestCases.TC_02" />
+			<class name="TestCases.TC_03" />
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->
